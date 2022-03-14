@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="400.0" style="-fx-border-color: white; -fx-border-width: 10; -fx-background-color: darkgrey;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutX="28.0" layoutY="44.0" prefHeight="194.0" prefWidth="346.0" style="-fx-background-color: darkgrey;">
+         <children>
+            <TextField fx:id="txtInput1" alignment="CENTER_RIGHT" layoutX="18.0" layoutY="14.0" onKeyPressed="#txtInputAction1" prefHeight="46.0" prefWidth="310.0" style="-fx-border-color: green; -fx-background-radius: 10;">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtInput2" alignment="CENTER_RIGHT" layoutX="18.0" layoutY="74.0" onAction="#txtInputAction2" onKeyPressed="#txtInputAction2" prefHeight="42.0" prefWidth="310.0" style="-fx-border-color: green; -fx-background-radius: 10;">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextField>
+            <Label fx:id="lblOutput" alignment="CENTER" layoutX="18.0" layoutY="136.0" prefHeight="48.0" prefWidth="310.0" style="-fx-border-color: green; -fx-background-radius: 10; -fx-background-color: white;">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="36.0" layoutY="239.0" prefHeight="273.0" prefWidth="332.0" style="-fx-background-color: darkgrey;">
+         <children>
+            <Button fx:id="btnSin" layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onAction="#sinAction" prefHeight="71.0" prefWidth="89.0" style="-fx-border-color: black; -fx-border-radius: 10;" text="sin">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="121.0" layoutY="185.0" mnemonicParsing="false" onAction="#divisionAction" prefHeight="71.0" prefWidth="89.0" style="-fx-border-color: black; -fx-border-radius: 10;" text="/">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="185.0" mnemonicParsing="false" onAction="#multiplicationAction" prefHeight="71.0" prefWidth="89.0" style="-fx-border-color: black; -fx-border-radius: 10;" text="*">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="121.0" layoutY="103.0" mnemonicParsing="false" onAction="#subtractionAction" prefHeight="71.0" prefWidth="89.0" style="-fx-border-color: black; -fx-border-radius: 10;" text="-">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="103.0" mnemonicParsing="false" onAction="#additionAction" prefHeight="71.0" prefWidth="89.0" style="-fx-border-color: black; -fx-border-radius: 10;" text="+">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnE" layoutX="228.0" layoutY="185.0" mnemonicParsing="false" onAction="#exponentialAction" prefHeight="71.0" prefWidth="89.0" style="-fx-border-color: black; -fx-border-radius: 10;" text="e ">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnTan" layoutX="228.0" layoutY="103.0" mnemonicParsing="false" onAction="#tanAction" prefHeight="71.0" prefWidth="89.0" style="-fx-border-color: black; -fx-border-radius: 10;" text="tan">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCos" layoutX="121.0" layoutY="22.0" mnemonicParsing="false" onAction="#cosAction" prefHeight="71.0" prefWidth="89.0" style="-fx-border-color: black; -fx-border-radius: 10;" text="cos">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="228.0" layoutY="22.0" mnemonicParsing="false" onAction="#DeleteAction" prefHeight="71.0" prefWidth="89.0" style="-fx-border-color: black; -fx-border-radius: 10;" text="C">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="273.0" layoutY="197.0" prefHeight="23.0" prefWidth="10.0" style="-fx-background-color: transparent;" text="x">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
